@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВК Реклама - Масштабирование</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 16px;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .step h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            color: #666;
+            line-height: 1.6;
+            margin-left: 42px;
+        }
+
+        .bookmarklet-container {
+            background: #f8f9fa;
+            border: 2px dashed #667eea;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .bookmarklet-container p {
+            margin-bottom: 15px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .bookmarklet-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: move;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .bookmarklet-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        }
+
+        .instruction {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .instruction strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #856404;
+        }
+
+        .video-demo {
+            margin-top: 30px;
+            padding: 20px;
+            background: #e8f5e9;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .video-demo h3 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .feature {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .feature h4 {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .feature p {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .footer {
+            padding: 20px 30px;
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #666;
+            font-size: 13px;
+        }
+
+        @media (max-width: 640px) {
+            .header h1 {
+                font-size: 24px;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 ВК Реклама - Масштабирование</h1>
+            <p>Дублируйте рекламные группы в один клик</p>
+        </div>
+
+        <div class="content">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #333;">Как использовать:</h2>
+
+            <div class="step">
+                <h3><span class="step-number">1</span> Перетащите кнопку в закладки</h3>
+                <p>Зажмите кнопку ниже и перетащите её на панель закладок браузера</p>
+            </div>
+
+            <div class="bookmarklet-container">
+                <p><strong>👇 Перетащите эту кнопку в закладки:</strong></p>
+                <a href="javascript:(function(){var s=document.createElement('script');s.src='https://vkscaler.ru/bookmarklet.js?v='+Date.now();document.body.appendChild(s);})();" 
+                   class="bookmarklet-button"
+                   onclick="alert('⚠️ Не кликайте! Перетащите кнопку на панель закладок!'); return false;">
+                    🚀 ВК Масштабер
+                </a>
+                
+                <div class="instruction">
+                    <strong>💡 Не видите панель закладок?</strong>
+                    Нажмите Ctrl+Shift+B (Windows) или Cmd+Shift+B (Mac) чтобы показать панель закладок
+                </div>
+            </div>
+
+            <div class="step">
+                <h3><span class="step-number">2</span> Откройте рекламный кабинет ВК</h3>
+                <p>Перейдите на сайт <a href="https://ads.vk.com" target="_blank">ads.vk.com</a> и откройте любую группу</p>
+            </div>
+
+            <div class="step">
+                <h3><span class="step-number">3</span> Кликните на закладку</h3>
+                <p>Нажмите на добавленную закладку "🚀 ВК Масштабер" - откроется интерфейс дублирования прямо поверх страницы!</p>
+            </div>
+
+            <div class="step">
+                <h3><span class="step-number">4</span> Заполните данные и запустите</h3>
+                <p>Введите API токен, ID группы, количество копий и нажмите "Начать дублирование"</p>
+            </div>
+
+            <h3 style="margin: 40px 0 20px; text-align: center; color: #333;">Возможности:</h3>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Быстро</h4>
+                    <p>5 секунд на группу</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎨</div>
+                    <h4>Всё копируется</h4>
+                    <p>Креативы, бюджеты, таргетинг</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔐</div>
+                    <h4>Безопасно</h4>
+                    <p>Токен только в браузере</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <h4>Удобно</h4>
+                    <p>Работает поверх страницы</p>
+                </div>
+            </div>
+
+            <div class="video-demo">
+                <h3>🎥 Как это работает</h3>
+                <p>После клика на закладку появится красивый интерфейс прямо на странице ads.vk.com</p>
+                <p style="margin-top: 10px; font-size: 12px;">Никакой установки расширений! Работает сразу!</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Работает через официальный VK Ads API</p>
+            <p style="margin-top: 5px; font-size: 11px;">Не является официальным продуктом ВКонтакте</p>
+        </div>
+    </div>
+</body>
+</html>
