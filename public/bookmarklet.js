@@ -217,10 +217,25 @@
   
   document.body.appendChild(overlay);
   
+  // Автоматически определяем ID группы из URL
+  var autoGroupId = '';
+  var urlMatch = window.location.pathname.match(/\/group\/(\d+)/);
+  if (urlMatch) {
+    autoGroupId = urlMatch[1];
+  }
+  
   // Загружаем токен
   var savedToken = localStorage.getItem('vk_ads_scaler_token');
   if (savedToken) {
     document.getElementById('apiTokenInput').value = savedToken;
+  }
+  
+  // Автозаполняем ID группы
+  if (autoGroupId) {
+    document.getElementById('groupIdInput').value = autoGroupId;
+    document.getElementById('groupIdInput').style.background = '#e8f5e9';
+    addLog('✅ ID группы определён автоматически: ' + autoGroupId, 'success');
+    document.getElementById('logsContainer').style.display = 'block';
   }
   
   // Обработчик кнопки
